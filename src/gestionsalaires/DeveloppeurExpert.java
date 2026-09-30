@@ -4,6 +4,7 @@ public class DeveloppeurExpert extends Developpeur {
 
 	public DeveloppeurExpert(String nom, String prenom, int anciennete, String language) {
 		super(nom,prenom,anciennete,language);
+		this.poste="Developpeur expert";
 	}
 
 	@Override
