@@ -17,11 +17,19 @@ public class GestionSalaires {
         // Tests applicatifs
 
 		// Ajout d'un language pour tester
+
         Developpeur d = new Developpeur("Durand", "Michel", 4,"python");
         Manager m = new Manager("Dupont", "Lucie", 2);
 
+		//Ajout d'un developpeur expert pour tester.
+
+		DeveloppeurExpert de = new DeveloppeurExpert("Blemand","Yanis",50,"php");
+
         System.out.println(d.getDescription());
         System.out.println(m.getDescription());
+		System.out.println(de.getDescription());
+
+
 
     }
 

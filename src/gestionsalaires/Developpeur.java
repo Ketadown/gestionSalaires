@@ -13,15 +13,16 @@ public class Developpeur extends Employe {
 	protected String language;
 
 	public Developpeur(String nom, String prenom, int anciennete,String language) {
-		super(nom,prenom,anciennete,"Développeur");
+		super(nom,prenom,anciennete,"Developpeur");
 
 		this.language=language;
 	}
 
 	@Override
-	public int getSalaire(){
+	public double getSalaire(){
 
 		int prime =0;
+		double multiplicateur = 1;
 
 		switch (this.language.toLowerCase().trim()) {
 			case "java" :
@@ -36,7 +37,8 @@ public class Developpeur extends Employe {
 				prime = 45;
 				break;
 		}
-		return(1900+anciennete*100+prime);
+
+		return((1900+anciennete*100+prime));
 	}
 
 }

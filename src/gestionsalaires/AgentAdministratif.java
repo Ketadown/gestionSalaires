@@ -7,7 +7,7 @@ public class AgentAdministratif extends Employe{
 	}
 
 	@Override
-	public int getSalaire(){
+	public double getSalaire(){
 		return(1900);
 	}
 }
