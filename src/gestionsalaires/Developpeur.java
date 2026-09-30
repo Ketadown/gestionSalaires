@@ -41,4 +41,13 @@ public class Developpeur extends Employe {
 		return((1900+anciennete*100+prime));
 	}
 
+	@Override
+	public String getDescription() {
+
+		if (this.language != "" || !this.language.isEmpty()) {
+			return super.getDescription() + " (Langage acquis : " + this.language + ")";
+		}
+		return super.getDescription();
+	}
+
 }
