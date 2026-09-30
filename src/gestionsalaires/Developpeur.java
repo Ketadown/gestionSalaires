@@ -8,6 +8,16 @@ package gestionsalaires;
  *
  * @author maxim
  */
-public class Developpeur  {
+public class Developpeur extends Employe {
+
+
+	public Developpeur(String nom, String prenom, int anciennete) {
+		super(nom,prenom,anciennete,"Développeur");
+	}
+
+	@Override
+	public int getSalaire(){
+		return(1900+anciennete*100);
+	}
 
 }
