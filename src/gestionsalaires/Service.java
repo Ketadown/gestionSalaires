@@ -17,7 +17,7 @@ public class Service {
 
 	public void afficherDescription(){
 		for(Employe employe : ListeEmployes){
-			employe.getDescription();
+			System.out.println(employe.getDescription());
 		}
 	}
 
